@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONG V2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="menuPrincipal()">
+    
+<div id="frame">
+
+    <!-- Contenido menu -->
+    <!-- Div con los controles -->
+    <div id="controles">
+        <config class="controlesP1">
+            <button id="controlesp1_1" onclick="controlesp1_1()" class="boton"></button><br>
+            <button id="controlesp1_2" onclick="controlesp1_2()" class="boton"></button>
+        </config>
+        <config class="controlesP2">
+            <button id="controlesp2_1" onclick="controlesp2_1()" class="boton"></button><br>
+            <button id="controlesp2_2" onclick="controlesp2_2()" class="boton"></button>
+        </config>
+    </div>
+    
+    <!-- Configuracion de los parametros de la partida -->
+    <button id="play" onclick="play()" class="boton">JUGAR</button>
+    <div id="config">
+        <label>Selecciona dificultad</label>
+        <select name="dificultades" id="dificultad" class="boton">
+            <option value="-1">Facil</option>
+            <option value="0" selected="selected">Normal</option>
+            <option value="1">Dificil</option>
+        </select>
+        <br>
+        <label>Duracion de partida</label>
+            <input type="number" name="puntosFinales" id="puntosFinales" max="10" min="1" value="3" class="boton">
+        </label>
+    </div>
+    
+    <!-- Contenido del juego visible -->
+    <div id="puntosp1" class="puntos">0</div>
+    <div id="puntosp2" class="puntos">0</div>
+    <div id="bola"></div>
+    <div id="barra1" class="barra"></div>
+    <div id="barra2" class="barra"></div>
+    <div id="linea"></div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+</div>
+</body>
+</html>

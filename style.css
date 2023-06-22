@@ -1,0 +1,170 @@
+/* Variable que se modificará para cambiar los tema del juego */
+:root {
+    --tema: white;
+}
+
+/* Estilos generales */
+body, html{
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    background: rgb(128, 126, 126);
+}
+
+/* Frame centrado con el contenido de la pagina */
+#frame{
+    margin: auto;
+    border: 5px var(--tema) solid;
+    position: relative;
+    width: 700px;
+    height: 700px;
+    background-color: black;
+}
+
+/* Contenedor con los botones de los controles */
+.controles{
+    position: absolute;
+    color: var(--tema);
+}
+
+
+/* Controles jugador 1 */
+
+
+#controlesp1_1{
+    margin: 10px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+#controlesp1_2{
+    margin: 10px;
+    position: absolute;
+    left: 175px;
+    top: 10px;
+}
+
+/* Controles jugador 2 */
+
+#controlesp2_1{
+    margin: 10px;
+    position: absolute;
+    left: 400px;
+    top: 10px;
+}
+
+#controlesp2_2{
+    margin: 10px;
+    position: absolute;
+    left: 575px;
+    top: 10px;
+}
+
+/* Boton de play */
+#play{
+    top: 30%;
+    left: 40%;
+}
+
+/* Estilos de la bola */
+#bola{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 2px solid var(--tema);
+    border-radius: 10px;
+}
+
+/* Estilos generales de las barras */
+.barra{
+    width: 20px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid var(--tema);
+}
+
+#barra1{
+    top: 20px;
+    float: left;
+    position: absolute;
+}
+
+#barra2{
+    top: 20px;
+    right: 0px;
+    position: absolute;
+}
+
+/* Linea vertical estetica */
+#linea{
+    width: 50%;
+    border-right:var(--tema) dashed 5px;
+    height: 100%;
+}
+
+/* Estilos de la zona de configuracion */
+
+#config{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+label{
+    color: var(--tema);
+}
+
+#dificultad{
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid var(--tema);
+    border-radius: 10px;
+    background-color: black;
+    color: var(--tema);
+}
+
+
+ /* Estilo general para los botones */
+.boton{
+    padding: 30px;
+    position: relative;
+    color: var(--tema);
+    border: var(--tema) 2px solid;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+#puntosFinales{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.boton:hover{
+    transition: 0.5s;
+    box-shadow: 0 4px 10px gray;
+}
+
+
+/* Estilos de los puntos y marcador*/
+.puntos{
+    top: 40%;
+    position: absolute;
+    font-size: 20vw;
+    color: rgba(255, 255, 255, 0.329);
+    -webkit-text-stroke: 2px var(--tema);
+}
+
+#puntosp1{
+    left: 22%;
+}
+
+#puntosp2{
+    left: 62%;
+}
+
